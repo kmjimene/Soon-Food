@@ -8,9 +8,8 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/about-style.css">
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Webfonts/museosans_500_macroman/stylesheet.css" type="text/css" charset="utf-8" />
 
     
     <title>ABOUT</title>
@@ -26,23 +25,34 @@
     <![endif]-->
   </head>
   <body>
-  <!-- <div class="container"> -->
   <!-- header starts here -->
     <div class="row">
-      <div class="header col-md-12" id="top-header">
-        <div class="search-bar">
-          <form class="navbar-form navbar-left" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
+        <div class="col-lg-3 col-lg-offset-9 col-md-6 col-md-offset-6 col-xs-12">
+            <div id="custom-search-input">
+                <div class="input-group col-md-12">
+                    <input type="text" class="form-control input-lg" placeholder="Search" />
+                    <span class="input-group-btn">
+                        <button class="btn btn-info btn-lg" type="button">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </span>
+                </div>
             </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-          </form>
         </div>
       </div>
     </div>
-    <!-- social media buttons -->
+<!-- banner -->
     <div class="row">
-      <div class="header col-md-12" id="social">
+      <div class="banner col-lg-12 col-md-12 col-xs-12">
+      <img id="banner" src="images/bread.jpg">
+      </div>
+    </div>
+<!-- social media buttons -->
+    <div class="row">
+      <div class="social col-md-12">
+        <div class="pop-up-logo">
+          <img src="images/logo.jpeg">
+        </div>
         <div class="social-icons">
           <ul id="fontawesome">
             <li>
@@ -61,9 +71,20 @@
         </div>  
       </div>
     </div>
+<!-- new pop up menu starts here -->
+    <div class="row">
+      <div class="pop-up-menu hidden-lg col-md-12 col-xs-12 text-center">
+        <div class="btn-group" role="group" aria-label="new-nav">
+          <button type="button" class="btn btn-default"><a href="index.html">Home</a></button>
+          <button type="button" class="btn btn-default"><a href="about.html">About</a></button>
+          <button type="button" class="btn btn-default"><a href="store.html">Store</a></button>
+          <button type="button" class="btn btn-default"><a href="contact.html">Contact</a></button>
+        </div>
+      </div>
+    </div>
    <!-- main container starts here -->
     <div class="row">
-      <div class="sidebar col-md-2">
+      <div class="sidebar col-lg-2 hidden-md hidden-sm hidden-xs">
         <div class="logo">
           <img src="images/logo.jpeg"/>
         </div>
@@ -76,27 +97,25 @@
           </ul>
         </div>
       </div>
-      <div class="main-container col-md-10">
-        <div class="about-image-1">
-          <img class="img-fade" src="images/about1.png">
-            <div class="about-info-1">
+      <div class="main-container col-lg-10 col-md-12 col-sm-12 col-xs-12">
+        <div class="img-div col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="about1">
+            <img class="img-fade" src="images/about1.png">
               <p class="color-change">
                 SOO N IS A NEW FOOD CONCEPT GROUNDED IN BOTH SEASONAL CAREFULLY CURATED MENUS AND AN ON-GOING ARTISTIC ENGAGEMENT WITH ALL THINGS CULINARY.
               </p>
-            </div>
+          </div>
         </div>
-        <div class="about-image-2">
-          <img class="img-fade2" src="images/about2.png">
-            <div class="about-info-2">
+        <div class="img-div col-lg-6 col-md-6 col-sm-12 col-xs-12"> 
+          <div class="about2">
+            <img class="img-fade2" src="images/about2.png">
               <p class="color-change2">
                 WITH A BACKGROUND IN FINE ARTS AND FASHION, SAEHEE CHO CONCEPTUALIZES FOOD AS A MEDIUM IN THE PRACTICE OF ART MAKING AND ENDEAVORS TO MAKE FOOD THAT IS AS MUCH ABOUT THE PROCESS AS IT IS ABOUT THE PLATE. 
               </p>
-            </div>
+          </div>
         </div>
-        <br class="clear-both">
-      </div>
+      </div>      
     </div>
-
 
     <!-- footer starts here -->
     <div class="row">
@@ -123,19 +142,19 @@
     <script src="js/bootstrap.min.js"></script>
     <script>
       $('.img-fade').mouseenter(function() {
-        $('.img-fade').fadeTo('slow', .33);
+        $('.img-fade').fadeTo('fast', .33);
       });
 
       $('.img-fade2').mouseenter(function() {
-        $('.img-fade2').fadeTo('slow', .33);
+        $('.img-fade2').fadeTo('fast', .33);
       });
 
       $('.img-fade').mouseleave(function() {
-        $('.img-fade').fadeTo('slow', 1);
+        $('.img-fade').fadeTo('fast', 1);
       });
 
       $('.img-fade2').mouseleave(function() {
-        $('.img-fade2').fadeTo('slow', 1);
+        $('.img-fade2').fadeTo('fast', 1);
       });
 
       $('.img-fade').mouseenter(function() {
@@ -155,19 +174,19 @@
       });
 
       $('.img-fade').mouseenter(function() {
-        $('.about-info-1').css('border','4px solid #000');
+        $('.color-change').css('border','4px solid #000');
       });
 
       $('.img-fade2').mouseenter(function() {
-        $('.about-info-2').css('border','4px solid #000');
+        $('.color-change2').css('border','4px solid #000');
       });
 
       $('.img-fade').mouseleave(function() {
-        $('.about-info-1').css('border','4px solid #fff');
+        $('.color-change').css('border','4px solid #fff');
       });
 
       $('.img-fade2').mouseleave(function() {
-        $('.about-info-2').css('border','4px solid #fff');
+        $('.color-change2').css('border','4px solid #fff');
       });
 
     </script>
