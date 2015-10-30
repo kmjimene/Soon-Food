@@ -1,0 +1,164 @@
+.header {
+	/** background-color: #000; **/
+	height: 50px;
+}
+
+/** social media buttons **/
+#social {
+	height: 30px;
+	padding-top: 5px;
+	background-color: #FCFCFC;
+}
+
+.social-icons {
+	height: 50px;
+	width: 300px;
+	float: right;
+	padding-right: 15px;
+}
+
+#fontawesome li {
+	float: right;
+	list-style-type: none;
+	margin-left: 20px;
+}
+
+#fontawesome li:hover {
+	color: #E6E6E6;
+}
+
+.sidebar {
+	background-color: #99CCFF;
+	height: 700px;
+	background-color: #FCFCFC;
+}
+
+.main-container {
+	background-color: #FF99FF;
+	height: 700px;
+	background-color: #FCFCFC;
+}
+
+.search-bar {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding-right: 10px;
+}
+
+
+.logo {
+	padding-left: 10px;
+	padding-bottom: 15px;
+}
+
+.navigation {
+	padding-left: 10px;
+}
+
+.nav li a {
+	color: #333433;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+.about-image-1 {
+	float: left;
+	margin-right: 5px;
+	margin-top: 100px;
+}
+
+.about-info-1 {
+	width: 200px;
+	height: 200px;
+	border: 4px solid #fff;
+	position: relative;
+	top: -350px;
+	left: 150px;
+	/** background-color: #000; **/
+}
+
+.about-info-1 p {
+	text-align: center;
+	padding-top: 20px;
+	color: #fff;
+	padding-left: 5px;
+	padding-right: 5px;
+	z-index: auto;
+}
+
+.about-info-2 {
+	width: 200px;
+	height: 250px;
+	border: 4px solid #fff;
+	position: relative;
+	top: -380px;
+	left: 150px;
+	/** background-color: #000; **/
+}
+
+.about-info-2 p {
+	text-align: center;
+	padding-top: 20px;
+	color: #fff;
+	padding-left: 5px;
+	padding-right: 5px;
+	z-index: auto;
+}
+
+
+.about-image-2 {
+	float: left;
+	margin-left: 5px;
+	margin-top: 100px;
+}
+
+
+.clear-both {
+	clear: both;
+}
+
+
+.footer {
+	background-color: #333433;
+	height: 290px;
+}
+
+.topbutton a {
+	display: block;
+	margin: 0 auto;
+	height: 30px;
+	width: 100px;
+	background-color: #666666;
+	border: none;
+}
+
+
+.topbutton a:hover {
+	background-color: #F4F4F4;
+}
+
+.slogan-image img {
+	display: block;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+.slogan p {
+	display: block;
+	margin: 0 auto;
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	color: #7D7D7D;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.copyright p {
+	display: block;
+	margin: 0 auto;
+	font-family: 'Lato', sans-serif;
+	font-size: 10px;
+	color: #7D7D7D;
+	margin-top: 20px;
+	padding-left: 20px;
+}
