@@ -1,51 +1,104 @@
-.header {
-	/** background-color: #000; **/
-	height: 50px;
+/** search bar **/
+#custom-search-input{
+    padding: 3px;
+    border: solid 1px #E4E4E4;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+#custom-search-input input{
+    border: 0;
+    box-shadow: none;
+}
+
+#custom-search-input button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input .glyphicon-search{
+    font-size: 23px;
+}
+/** banner **/
+
+#banner {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+/** pop-up logo **/
+.pop-up-logo {
+    float: left;
+}
+
+.pop-up-logo img {
+    float: left;
+    display: block;
+    width: 45%;
+    height: auto;
 }
 
 /** social media buttons **/
-#social {
-	height: 30px;
-	padding-top: 5px;
-	background-color: #FCFCFC;
+.social {
+    height: auto;
 }
 
 .social-icons {
-	height: 50px;
-	width: 300px;
-	float: right;
-	padding-right: 15px;
+    width: auto;
+    float: right;
 }
 
 #fontawesome li {
-	float: right;
-	list-style-type: none;
-	margin-left: 20px;
+    list-style-type: none;
+    float: right;
 }
 
 #fontawesome li:hover {
-	color: #E6E6E6;
+    color: #E6E6E6;
 }
 
+.fa-lg {
+    margin-left: 10px;
+
+}
+
+/** pop-up menu **/
+.pop-up-menu {
+    padding-bottom: 50px;
+}
+
+.btn-default a {
+    text-decoration: none;
+    color: #333433;
+
+}
+
+.btn-default a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+/** sidebar **/
+
 .sidebar {
-	background-color: #99CCFF;
-	height: 700px;
-	background-color: #FCFCFC;
+	height: auto;
 }
 
 .main-container {
-	background-color: #FF99FF;
-	height: 700px;
-	background-color: #FCFCFC;
+	height: auto;
 }
-
-.search-bar {
-	position: absolute;
-	top: 0;
-	right: 0;
-	padding-right: 10px;
-}
-
 
 .logo {
 	padding-left: 10px;
@@ -58,107 +111,176 @@
 
 .nav li a {
 	color: #333433;
-	font-family: 'Noto Sans', sans-serif;
+	font-family: 'MyWebFont', Arial, sans-serif;
 }
 
-.about-image-1 {
-	float: left;
-	margin-right: 5px;
-	margin-top: 100px;
+/** about section **/
+.img-div {
+	height: 50%;
 }
 
-.about-info-1 {
-	width: 200px;
-	height: 200px;
-	border: 4px solid #fff;
-	position: relative;
-	top: -350px;
-	left: 150px;
-	/** background-color: #000; **/
-}
-
-.about-info-1 p {
-	text-align: center;
-	padding-top: 20px;
-	color: #fff;
-	padding-left: 5px;
-	padding-right: 5px;
-	z-index: auto;
-}
-
-.about-info-2 {
-	width: 200px;
-	height: 250px;
-	border: 4px solid #fff;
-	position: relative;
-	top: -380px;
-	left: 150px;
-	/** background-color: #000; **/
-}
-
-.about-info-2 p {
-	text-align: center;
-	padding-top: 20px;
-	color: #fff;
-	padding-left: 5px;
-	padding-right: 5px;
-	z-index: auto;
+.about1 {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
 }
 
 
-.about-image-2 {
-	float: left;
-	margin-left: 5px;
-	margin-top: 100px;
+.img-fade {
+    display: block;
+    margin: 0 auto;
+    z-index: 0;
+    position: relative;
+    padding-top: 40px;
+}
+
+.color-change {
+    display: block;
+    z-index: 2;
+    font-family: 'MyWebFont', Arial, sans-serif;
+    font-size: 14px;
+    position: relative;
+    top: -250px;
+    left: 100px;
+    border: 4px solid #FFF;
+    width: 300px;
+    height: 125px;
+    text-align: center;
+    padding: 5px;
+    color: #FFF;
+}
+
+.about2 {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.img-fade2 {
+    display: block;
+    margin: 0 auto;
+    z-index: 0;
+    position: relative;
+    padding-top: 40px;
+}
+
+.color-change2 {
+    display: block;
+    z-index: 2;
+    font-family: 'MyWebFont', Arial, sans-serif;
+    font-size: 14px;
+    position: relative;
+    top: -280px;
+    left: 100px;
+    border: 4px solid #FFF;
+    width: 300px;
+    height: 170px;
+    text-align: center;
+    padding: 5px;
+    color: #FFF;
 }
 
 
-.clear-both {
-	clear: both;
-}
-
+/** footer **/
 
 .footer {
-	background-color: #333433;
-	height: 290px;
+    background-color: #333433;
+    height: auto;
+    margin-bottom: 0;
+    width: 100%;
+    margin-top: 50px;
 }
 
 .topbutton a {
-	display: block;
-	margin: 0 auto;
-	height: 30px;
-	width: 100px;
-	background-color: #666666;
-	border: none;
+    display: block;
+    margin: 0 auto;
+    height: 30px;
+    width: 100px;
+    background-color: #666666;
+    border: none;
 }
 
 
 .topbutton a:hover {
-	background-color: #F4F4F4;
+    background-color: #F4F4F4;
 }
 
 .slogan-image img {
-	display: block;
-	margin: 0 auto;
-	margin-top: 10px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
 }
 
 .slogan p {
-	display: block;
-	margin: 0 auto;
-	font-family: 'Lato', sans-serif;
-	font-size: 14px;
-	color: #7D7D7D;
-	text-align: center;
-	margin-top: 10px;
+    display: block;
+    margin: 0 auto;
+    font-family: 'MyWebFont', Arial, sans-serif;
+    font-size: 14px;
+    color: #7D7D7D;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .copyright p {
-	display: block;
-	margin: 0 auto;
-	font-family: 'Lato', sans-serif;
-	font-size: 10px;
-	color: #7D7D7D;
-	margin-top: 20px;
-	padding-left: 20px;
+    display: block;
+    margin: 0 auto;
+    font-family: 'MyWebFont', Arial, sans-serif;
+    font-size: 10px;
+    color: #7D7D7D;
+    margin-top: 20px;
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+    .pop-up-logo img {
+        display: none;
+    }
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    .pop-up-menu {
+        padding-top: 35px;
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+       .pop-up-menu {
+        padding-top: 35px;
+    }
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+    .pop-up-menu {
+        padding-top: 35px;
+    }
+
+    .slogan-image img {
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+        width: 35%;
+        height: auto;
+    }
+    .slogan p {
+        display: block;
+        margin: 0 auto;
+        font-family: 'MyWebFont', Arial, sans-serif;
+        font-size: 12px;
+        color: #7D7D7D;
+        text-align: center;
+        margin-top: 10px;
+    }
 }
