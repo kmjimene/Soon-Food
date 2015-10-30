@@ -38,13 +38,24 @@
     width: 100%;
 }
 
+/** pop-up logo **/
+.pop-up-logo {
+	float: left;
+}
+
+.pop-up-logo img {
+	float: left;
+	display: block;
+	width: 45%;
+	height: auto;
+}
+
 
 /** social media buttons **/
 .social {
 	height: auto;
 	padding-bottom: 50px;
 }
-
 
 .social-icons {
 	width: auto;
@@ -65,14 +76,31 @@
 
 }
 
+/** pop-up menu **/
+.pop-up-menu {
+	padding-bottom: 50px;
+}
+
+.btn-default a {
+	text-decoration: none;
+	color: #333433;
+
+}
+
+.btn-default a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
 /** sidebar **/
 
 .sidebar {
-	height: 700px;
+	height: auto;
+	/*background-color: gray;*/
 }
 
-.main-container {
-	height: 700px;
+.main-container1 {
+	height: auto;
 }
 
 .logo {
@@ -86,26 +114,12 @@
 
 .nav li a {
 	color: #333433;
-	font-family: 'Noto Sans', sans-serif;
+	font-family: 'MyWebFont', Arial, sans-serif;
 }
-.store-gallery {
-	display: block;
-	/*border: 2px solid #000;*/
-	width: 100%;
-	height: 100%;
-}
-.center {
-	height: 300px;
-	width: 80%;
-	margin: 0 auto;
-}
+
 .item1 {
-	width: 200px;
-	height: 300px;
-	float: left;
-	/*background-color: #000;
-	border: 2px solid #000;*/
-	margin: 10px 10px;
+	/*background-color: #000;*/
+	/*border: 2px solid #000;*/
 }
 
 .img1 {
@@ -126,7 +140,7 @@
 .name p {
 	display: block;
 	z-index: 2;
-	font-family: 'Noto Sans', sans-serif;
+	font-family: 'MyWebFont', Arial, sans-serif;
 	font-size: 20px;
 	position: relative;
 	top: -125px;
@@ -144,29 +158,11 @@
 }
 
 .item2 {
-	width: 200px;
-	height: 300px;
-	float: left;
-	/*background-color: #000;
-	border: 2px solid #000;*/
-	margin: 10px 10px;
+	/*background-color: #000;*/
+	/*border: 2px solid #000;*/
 }
 
 .img2 {
-	display: block;
-	margin: 0 auto;
-}
-
-.item3 {
-	width: 200px;
-	height: 300px;
-	float: left;
-	/*background-color: #000;
-	border: 2px solid #000;*/
-	margin: 10px 10px;
-}
-
-.img3 {
 	display: block;
 	margin: 0 auto;
 }
@@ -175,14 +171,19 @@
 	clear: both;
 }
 
+.item3 {
+	/*background-color: #000;*/
+	/*border: 2px solid #000;*/
+}
+
+.img3 {
+	display: block;
+	margin: 0 auto;
+}
+
 .item4 {
-	float: left;
-	width: 200px;
-	height: 300px;
-	float: left;
-	/*background-color: #000;
-	border: 2px solid #000;*/
-	margin: 0 10px;
+	/*background-color: #000;*/
+	/*border: 2px solid #000;*/
 }
 
 .img4 {
@@ -191,13 +192,8 @@
 }
 
 .item5 {
-	float: left;
-	width: 200px;
-	height: 300px;
-	float: left;
-	/*background-color: #000;
-	border: 2px solid #000;*/
-	margin: 0 10px;
+	/*background-color: #000;*/
+	/*border: 2px solid #000;*/
 }
 
 .img5 {
@@ -206,13 +202,8 @@
 }
 
 .item6 {
-	float: left;
-	width: 200px;
-	height: 300px;
-	float: left;
-	/*background-color: #000;
-	border: 2px solid #000;*/
-	margin: 0 10px;
+	/*background-color: #000;*/
+	/*border: 2px solid #000;*/
 }
 
 .img6 {
@@ -220,9 +211,14 @@
 	margin: 0 auto;
 }
 
+/** footer **/
+
 .footer {
 	background-color: #333433;
-	height: 290px;
+	height: auto;
+    margin-bottom: 0;
+    width: 100%;
+    margin-top: 35px;
 }
 
 .topbutton a {
@@ -248,7 +244,7 @@
 .slogan p {
 	display: block;
 	margin: 0 auto;
-	font-family: 'Lato', sans-serif;
+	font-family: 'MyWebFont', Arial, sans-serif;
 	font-size: 14px;
 	color: #7D7D7D;
 	text-align: center;
@@ -258,9 +254,76 @@
 .copyright p {
 	display: block;
 	margin: 0 auto;
-	font-family: 'Lato', sans-serif;
+	font-family: 'MyWebFont', Arial, sans-serif;
 	font-size: 10px;
 	color: #7D7D7D;
 	margin-top: 20px;
-	padding-left: 20px;
+}
+
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+	.pop-up-logo img {
+		display: none;
+	}
+
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+	.main-container {
+		height: 950px;
+	}
+	.pop-up-menu {
+		padding-top: 25px;
+	}
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+	.main-container {
+		height: 800px;
+	}
+	.main-slogan-img {
+		height: auto;
+		width: 80%;
+		margin: 0 auto;
+		margin-bottom: 80px;
+		margin-top: 30px;
+	}
+	.pop-up-menu {
+		padding-top: 35px;
+	}
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+	.pop-up-menu {
+		padding-top: 35px;
+	}
+
+	.slogan-image img {
+		display: block;
+		margin: 0 auto;
+		margin-top: 10px;
+		width: 35%;
+		height: auto;
+	}
+	.slogan p {
+		display: block;
+		margin: 0 auto;
+		font-family: 'MyWebFont', Arial, sans-serif;
+		font-size: 12px;
+		color: #7D7D7D;
+		text-align: center;
+		margin-top: 10px;
+	}
+
 }
