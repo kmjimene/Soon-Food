@@ -38,13 +38,22 @@
     width: 100%;
 }
 
+/** pop-up logo **/
+.pop-up-logo {
+	float: left;
+}
+
+.pop-up-logo img {
+	float: left;
+	display: block;
+	width: 45%;
+	height: auto;
+}
 
 /** social media buttons **/
 .social {
 	height: auto;
-	padding-bottom: 50px;
 }
-
 
 .social-icons {
 	width: auto;
@@ -63,6 +72,22 @@
 .fa-lg {
 	margin-left: 10px;
 
+}
+
+/** pop-up menu **/
+.pop-up-menu {
+	padding-bottom: 50px;
+}
+
+.btn-default a {
+	text-decoration: none;
+	color: #333433;
+
+}
+
+.btn-default a:hover {
+    text-decoration: none;
+    color: #000;
 }
 
 /** sidebar **/
@@ -86,7 +111,7 @@
 
 .nav li a {
 	color: #333433;
-	font-family: 'Noto Sans', sans-serif;
+	font-family: 'MyWebFont', Arial, sans-serif;
 }
 
 /** main container slogan image **/
@@ -100,7 +125,7 @@
 
 .main-slogan {
 	height: auto;
-	width: 80%;	
+	width: 70%;	
 	display: block;
 	margin: 0 auto;
 }
@@ -154,7 +179,7 @@ ul li img {
 .slogan p {
 	display: block;
 	margin: 0 auto;
-	font-family: 'Lato', sans-serif;
+	font-family: 'MyWebFont', Arial, sans-serif;
 	font-size: 14px;
 	color: #7D7D7D;
 	text-align: center;
@@ -164,8 +189,91 @@ ul li img {
 .copyright p {
 	display: block;
 	margin: 0 auto;
-	font-family: 'Lato', sans-serif;
+	font-family: 'MyWebFont', Arial, sans-serif;
 	font-size: 10px;
 	color: #7D7D7D;
 	margin-top: 20px;
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+	.sidebar {
+	height: 750px;
+	}
+
+	.main-container {
+	height: 750px;
+	}
+
+	.pop-up-logo img {
+		display: none;
+	}
+
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+	.main-container {
+		height: 950px;
+	}
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+	.main-container {
+		height: 800px;
+	}
+	.main-slogan-img {
+		height: auto;
+		width: 80%;
+		margin: 0 auto;
+		margin-bottom: 80px;
+		margin-top: 30px;
+	}
+	.pop-up-menu {
+		padding-top: 35px;
+	}
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+	.main-container {
+		height: 550px;
+	}
+	.main-slogan-img {
+		height: auto;
+		width: 80%;
+		margin: 0 auto;
+		margin-bottom: 80px;
+		margin-top: 30px;
+	}
+
+	.pop-up-menu {
+		padding-top: 35px;
+	}
+
+	.slogan-image img {
+		display: block;
+		margin: 0 auto;
+		margin-top: 10px;
+		width: 35%;
+		height: auto;
+	}
+	.slogan p {
+		display: block;
+		margin: 0 auto;
+		font-family: 'MyWebFont', Arial, sans-serif;
+		font-size: 12px;
+		color: #7D7D7D;
+		text-align: center;
+		margin-top: 10px;
+	}
+
 }
