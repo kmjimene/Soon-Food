@@ -37,32 +37,56 @@
     height: 100%;
     width: 100%;
 }
+/** pop-up logo **/
+.pop-up-logo {
+    float: left;
+}
 
+.pop-up-logo img {
+    float: left;
+    display: block;
+    width: 45%;
+    height: auto;
+}
 
 /** social media buttons **/
 .social {
-	height: auto;
-	padding-bottom: 50px;
+    height: auto;
 }
 
-
 .social-icons {
-	width: auto;
-	float: right;
+    width: auto;
+    float: right;
 }
 
 #fontawesome li {
-	list-style-type: none;
-	float: right;
+    list-style-type: none;
+    float: right;
 }
 
 #fontawesome li:hover {
-	color: #E6E6E6;
+    color: #E6E6E6;
 }
 
 .fa-lg {
-	margin-left: 10px;
+    margin-left: 10px;
 
+}
+
+/** pop-up menu **/
+.pop-up-menu {
+    padding-bottom: 50px;
+}
+
+.btn-default a {
+    text-decoration: none;
+    color: #333433;
+
+}
+
+.btn-default a:hover {
+    text-decoration: none;
+    color: #000;
 }
 
 /** sidebar **/
@@ -86,7 +110,7 @@
 
 .nav li a {
 	color: #333433;
-	font-family: 'Noto Sans', sans-serif;
+	font-family: 'MyWebFont', Arial, sans-serif;
 }
 
 /** contact form **/
@@ -96,7 +120,7 @@
     max-width: 90%;
     background: #FCFCFC;
     padding: 25px 15px 25px 10px;
-    font: 12px 'Noto Sans', sans-serif;
+    font-family: 'MyWebFont', Arial, sans-serif;
     color: #333433;
     border:1px solid #E4E4E4;
 }
@@ -172,47 +196,109 @@
     color: #333433;
 }
 
+/** footer **/
+
 .footer {
-	background-color: #333433;
-	height: auto;
+    background-color: #333433;
+    height: auto;
     margin-bottom: 0;
+    width: 100%;
 }
 
 .topbutton a {
-	display: block;
-	margin: 0 auto;
-	height: 30px;
-	width: 100px;
-	background-color: #666666;
-	border: none;
+    display: block;
+    margin: 0 auto;
+    height: 30px;
+    width: 100px;
+    background-color: #666666;
+    border: none;
 }
 
 
 .topbutton a:hover {
-	background-color: #F4F4F4;
+    background-color: #F4F4F4;
 }
 
 .slogan-image img {
-	display: block;
-	margin: 0 auto;
-	margin-top: 10px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
 }
 
 .slogan p {
-	display: block;
-	margin: 0 auto;
-	font-family: 'Lato', sans-serif;
-	font-size: 14px;
-	color: #7D7D7D;
-	text-align: center;
-	margin-top: 10px;
+    display: block;
+    margin: 0 auto;
+    font-family: 'MyWebFont', Arial, sans-serif;
+    font-size: 14px;
+    color: #7D7D7D;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .copyright p {
-	display: block;
-	margin: 0 auto;
-	font-family: 'Lato', sans-serif;
-	font-size: 10px;
-	color: #7D7D7D;
-	margin-top: 20px;
+    display: block;
+    margin: 0 auto;
+    font-family: 'MyWebFont', Arial, sans-serif;
+    font-size: 10px;
+    color: #7D7D7D;
+    margin-top: 20px;
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+    .pop-up-logo img {
+        display: none;
+    }
+    .basic-grey {
+        margin-top: 50px;
+    }
+
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    .pop-up-menu {
+        padding-top: 35px;
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+       .pop-up-menu {
+        padding-top: 35px;
+    }
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+    .pop-up-menu {
+        padding-top: 35px;
+    }
+
+    .slogan-image img {
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+        width: 35%;
+        height: auto;
+    }
+    .slogan p {
+        display: block;
+        margin: 0 auto;
+        font-family: 'MyWebFont', Arial, sans-serif;
+        font-size: 12px;
+        color: #7D7D7D;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .main-container {
+        height: 550px;
+    }
+
 }
